@@ -1,12 +1,20 @@
 import subprocess
 import os
 
+<<<<<<< HEAD
 # Get absolute paths
 current_dir = os.path.dirname(os.path.abspath(__file__))
 corpus_dir = os.path.join(current_dir, "mfa_chunks")
 dictionary_path = "english_us_mfa"
 acoustic_model = "english_mfa"
 output_dir = os.path.join(current_dir, "mfa_output")
+=======
+# Set paths
+corpus_dir = "/Users/aishanibal/heirloom-glenne/heirloom_speech_analysis/mfa_chunks"
+acoustic_model = "english_us_mfa"
+dictionary_path = "english_mfa"
+output_dir = "/Users/aishanibal/heirloom-glenne/heirloom_speech_analysis/mfa_output"
+>>>>>>> a4f95c2 (Save local changes before pulling)
 
 # Ensure output directory exists and is empty
 os.makedirs(output_dir, exist_ok=True)

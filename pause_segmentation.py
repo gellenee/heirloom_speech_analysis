@@ -9,7 +9,7 @@ torch.set_num_threads(1)
 model, utils = torch.hub.load(repo_or_dir='snakers4/silero-vad', model='silero_vad')
 (get_speech_timestamps, _, read_audio, _, _) = utils
 
-AUDIO_PATH = 'audio.wav'
+AUDIO_PATH = 'audio0.wav'
 sample_rate = 16000
 audio = read_audio(AUDIO_PATH, sampling_rate=sample_rate)
 
